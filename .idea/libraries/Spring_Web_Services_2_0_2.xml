@@ -3,7 +3,7 @@
     <properties version="2.0.2" />
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/spring-ws.jar!/" />
-      <root url="jar://$USER_HOME$/Downloads/json-20180813.jar!/" />
+      <root url="jar://$PROJECT_DIR$/json-20180813.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
