@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.example.JavaProject;
 
 import java.io.BufferedReader;
