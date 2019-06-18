@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.example.JavaProject;
 
 import java.io.BufferedReader;
@@ -24,7 +22,7 @@ public class DownloadCSV {
 
 		String url = "https://www.dati.gov.it/api/3/action/package_show?id=e706b4f6-b6ee-42eb-a90c-eac4448e8c82";
 		if(args.length == 1)
-			url = args[0]; //Url by args ;-)
+			url = args[0]; //Url by args 
 		try {
 			
 			URLConnection openConnection = new URL(url).openConnection();
