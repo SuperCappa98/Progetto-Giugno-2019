@@ -4,14 +4,20 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.example.JavaProject.SviluppoDati.*;
 
-import java.io.*;
-import java.util.*;
-
 @SpringBootApplication
 public class JavaProject2019Application {
 
 	public static void main(String[] args) {
+		//Download del file CSV
 		DownloadCSV.main(args);
+		
+		//Parsing e serializzazione dei dati
+		ParsingAndSerializationData.main(args);
+		
+		//Parsing e serializzazione dei metadati
+		ParsingAndSerializationMetadata.main(args);
+		
+		//Avvio di Spring
 		SpringApplication.run(JavaProject2019Application.class, args);
 	}
 

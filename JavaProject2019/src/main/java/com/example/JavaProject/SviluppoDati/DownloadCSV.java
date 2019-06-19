@@ -56,7 +56,7 @@ public class DownloadCSV {
 			        	try {
 			        	download(urlD, "data-set.csv");
 			        	} catch (FileAlreadyExistsException e) {
-			        		System.out.println("Il seguente file esiste già");
+			        		System.out.println("Il seguente file esiste già");			        		
 			        	}
 			        }
 			    }
@@ -74,4 +74,5 @@ public class DownloadCSV {
 	        Files.copy(in, Paths.get(fileName));
 	    }
 	}
+	
 }

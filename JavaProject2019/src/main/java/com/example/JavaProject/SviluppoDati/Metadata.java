@@ -3,7 +3,7 @@ package com.example.JavaProject.SviluppoDati;
 import java.io.Serializable;
 
 public class Metadata implements Serializable {
-	public static final long serialVersionUID = 1; 
+	public static final long serialVersionUID = 1L; 
 	private String nome;
 	private String tipo;
 
