@@ -3,6 +3,7 @@ package com.example.JavaProject.SviluppoDati;
 import java.io.* ;
 
 public class FondiSviluppoPuglia implements Serializable {
+	private static final long serialVersionUID = 1;
 	private String programma;
 	private String asse;
 	private String linea;
