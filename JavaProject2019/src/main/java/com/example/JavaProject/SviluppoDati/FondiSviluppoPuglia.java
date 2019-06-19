@@ -1,24 +1,63 @@
 package com.example.JavaProject.SviluppoDati;
 
 import java.io.* ;
+import java.lang.annotation.*;
+
+@Retention(RetentionPolicy.RUNTIME)
+@interface Metadati{
+	String nome();
+	String tipo();
+}
 
 public class FondiSviluppoPuglia implements Serializable {
 	private static final long serialVersionUID = 1L;
+	
+	@Metadati(nome="programma", tipo="String")
 	private String programma;
+	
+	@Metadati(nome="asse", tipo="String")
 	private String asse;
+	
+	@Metadati(nome="linea", tipo="String")
 	private String linea;
+	
+	@Metadati(nome="azione", tipo="String")
 	private String azione;
+	
+	@Metadati(nome="titoloProgetto", tipo="String")
 	private String titoloProgetto;
+	
+	@Metadati(nome="ambitoIntervento", tipo="String")
 	private String ambitoIntervento;
+	
+	@Metadati(nome="finanziamentoProgetto", tipo="Double")
 	private double finanziamentoProgetto;
+	
+	@Metadati(nome="finanziamentoErogato", tipo="Double")
 	private double finanziamentoErogato;
+	
+	@Metadati(nome="finanziamentoConcesso", tipo="Double")
 	private double finanziamentoConcesso;
+	
+	@Metadati(nome="beneficiario", tipo="String")
 	private String beneficiario;
+	
+	@Metadati(nome="formaGiuridica", tipo="String")
 	private String formaGiuridica;
+	
+	@Metadati(nome="codiceAteco", tipo="String")
 	private String codiceAteco;
+	
+	@Metadati(nome="localizzazioneInvestimento", tipo="String")
 	private String localizzazioneInvestimento;
+	
+	@Metadati(nome="comune", tipo="String")
 	private String comune;
+	
+	@Metadati(nome="codiceIstat", tipo="long")
 	private long codiceIstat;
+	
+	@Metadati(nome="provincia", tipo="String")
 	private String provincia;
 	
 	public FondiSviluppoPuglia(String programma, String asse, String linea,
