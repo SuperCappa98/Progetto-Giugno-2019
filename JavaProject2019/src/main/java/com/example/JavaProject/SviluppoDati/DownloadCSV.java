@@ -1,4 +1,4 @@
-package com.example.JavaProject;
+package com.example.JavaProject.SviluppoDati;
 
 import java.io.BufferedReader;
 import java.io.IOException;
