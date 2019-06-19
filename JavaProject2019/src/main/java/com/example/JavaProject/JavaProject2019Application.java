@@ -11,6 +11,7 @@ import java.util.*;
 public class JavaProject2019Application {
 
 	public static void main(String[] args) {
+		DownloadCSV.main(args);
 		SpringApplication.run(JavaProject2019Application.class, args);
 	}
 

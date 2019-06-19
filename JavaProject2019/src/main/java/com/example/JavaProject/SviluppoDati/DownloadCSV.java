@@ -9,6 +9,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.FileAlreadyExistsException;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -52,7 +53,11 @@ public class DownloadCSV {
 			        String urlD = (String)o1.get("url");
 			        System.out.println(format + " | " + urlD);
 			        if(format.equals("csv")) {
+			        	try {
 			        	download(urlD, "data-set.csv");
+			        	} catch (FileAlreadyExistsException e) {
+			        		System.out.println("Il seguente file esiste già");
+			        	}
 			        }
 			    }
 			}
