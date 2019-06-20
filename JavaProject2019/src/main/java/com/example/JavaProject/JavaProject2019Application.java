@@ -12,7 +12,7 @@ public class JavaProject2019Application {
 		DownloadCSV.main(args);
 		
 		//Parsing e serializzazione dei dati
-		ParsingAndSerializationData.main(args);
+		ArrayList<FondiSviluppoPuglia> dati = ParsingAndSerializationData.getData();;
 		
 		//Parsing e serializzazione dei metadati
 		ParsingAndSerializationMetadata.main(args);
