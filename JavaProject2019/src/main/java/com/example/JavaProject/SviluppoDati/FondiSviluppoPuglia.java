@@ -10,7 +10,6 @@ import java.lang.annotation.*;
 }
 
 public class FondiSviluppoPuglia implements Serializable {
-	private static final long serialVersionUID = 1L;
 	
 	@Metadati(nome="programma", tipo="String")
 	private String programma;
