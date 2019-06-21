@@ -59,7 +59,7 @@ public class Statistics {
 	     for(double elemento : lista) {                   //il ciclo continua fino a che non ha scorso tutti gli elementi della lista
 		    sommaScarti += Math.pow(elemento-avg, 2);
 		 }
-	     double devStd = Math.sqrt(sommaScarti);
+	     double devStd = Math.sqrt(sommaScarti/lista.size());
 		 return devStd;
 	   }
 	  
