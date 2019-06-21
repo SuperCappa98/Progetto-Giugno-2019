@@ -44,7 +44,7 @@ public class Filtro {
 		}
 		
 		
-		//converte i valori di riferimento in double, se essi sono stringhe si entra nel catch
+		//converte i valori di riferimento in double, se essi sono stringhe letterali si entra nel catch
 		try {
 			datoDouble1 = Double.parseDouble(dato1);
 			datoDouble2 = Double.parseDouble(dato2);
