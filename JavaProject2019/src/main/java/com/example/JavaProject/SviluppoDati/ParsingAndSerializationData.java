@@ -23,7 +23,7 @@ public class ParsingAndSerializationData {
 				}
 				v.add(new FondiSviluppoPuglia(values[0], values[1], values[2], values[3], values[4], values[5], Double.parseDouble(values[6]),
 						Double.parseDouble(values[7]), Double.parseDouble(values[8]), values[9], values[10], values[11], values[12], values[13],
-						Long.parseLong(values[14]), values[15]));
+						values[14], values[15]));
 			}
 			br.close();
 		} catch (IOException i) {

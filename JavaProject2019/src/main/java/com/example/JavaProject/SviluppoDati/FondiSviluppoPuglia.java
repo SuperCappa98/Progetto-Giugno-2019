@@ -53,8 +53,8 @@ public class FondiSviluppoPuglia implements Serializable {
 	@Metadati(nome="comune", tipo="String")
 	private String comune;
 	
-	@Metadati(nome="codiceIstat", tipo="long")
-	private long codiceIstat;
+	@Metadati(nome="codiceIstat", tipo="String")
+	private String codiceIstat;
 	
 	@Metadati(nome="provincia", tipo="String")
 	private String provincia;
@@ -64,7 +64,7 @@ public class FondiSviluppoPuglia implements Serializable {
 			double finanziamentoProgetto, double finanziamentoErogato, 
 			double finanziamentoConcesso, String beneficiario, String formaGiuridica,
 			String codiceAteco, String localizzazioneInvestimento, String comune,
-			long codiceIstat, String provincia) {
+			String codiceIstat, String provincia) {
 		
 		super();
 		this.programma = programma;
@@ -284,14 +284,14 @@ public class FondiSviluppoPuglia implements Serializable {
 	/**
 	 * @return the codiceIstat
 	 */
-	public long getCodiceIstat() {
+	public String getCodiceIstat() {
 		return codiceIstat;
 	}
 
 	/**
 	 * @param codiceIstat the codiceIstat to set
 	 */
-	public void setCodiceIstat(long codiceIstat) {
+	public void setCodiceIstat(String codiceIstat) {
 		this.codiceIstat = codiceIstat;
 	}
 
