@@ -26,14 +26,17 @@ All'interno della query string, la stringa *tipologiaRichiesta* indica il tipo d
  - **data** : Restituisce i dati in formato JSON che sono contenuti all'interno del data-set;
  - **statistics** : Restistuisce le statistiche in formato JSON relative a un determinato attributo specificato;
 
-Per ricevere i dati o le statistiche relavite ad un attributo bisognerà richiederlo con la seguente sintassi:
+Per ricevere i dati o le statistiche relative ad un attributo bisognerà richiederlo con la seguente sintassi:
 
 > http://localhost:8080/"tipologiaRichiesta"?attribute="nomeAttributo"
 
-dove nomeAttributo è appunto il nome dell'attributo ric
+dove nomeAttributo è appunto il nome dell'attributo richiesto.
+Facciamo due piccoli esempi:
+> http://localhost:8080/statistics?attribute=comune
+> http://localhost:8080/data?attribute=codiceIstat
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzgxMjA4Myw4OTk1OTAxNTUsNjQ2OD
+eyJoaXN0b3J5IjpbMTAxNjM2OTMzMiw4OTk1OTAxNTUsNjQ2OD
 cwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYsNTIyNzE0OTY1LC0x
 NDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xODUxNTU0NDcwXX0=
 -->
