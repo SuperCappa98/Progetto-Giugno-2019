@@ -1,5 +1,8 @@
 package com.example.JavaProject.SviluppoDati;
 
+/**
+ *Classe per istanziare oggetti contenenti statistiche numeriche
+ */
 public class NumStatistics {
 	
 	double avg;
@@ -10,6 +13,7 @@ public class NumStatistics {
 	int count;
 	
 	/**
+	 * Costruttore
 	 * 
 	 * @param avg
 	 * @param min
@@ -17,10 +21,6 @@ public class NumStatistics {
 	 * @param devStd
 	 * @param sum
 	 * @param count
-	 */
-	
-	/**
-	 * Costruttore
 	 */
 	public NumStatistics(double avg, double min, double max, double devStd, double sum, int count) {
 		this.avg = avg;
@@ -32,89 +32,93 @@ public class NumStatistics {
 	}
 
 	/**
-	 * @return the avg
+	 * @return avg
 	 */
 	public double getAvg() {
 		return avg;
 	}
 
 	/**
-	 * @param avg the avg to set
+	 * @param avg
 	 */
 	public void setAvg(double avg) {
 		this.avg = avg;
 	}
 
 	/**
-	 * @return the min
+	 * @return min
 	 */
 	public double getMin() {
 		return min;
 	}
 
 	/**
-	 * @param min the min to set
+	 * @param min
 	 */
 	public void setMin(double min) {
 		this.min = min;
 	}
 
 	/**
-	 * @return the max
+	 * @return max
 	 */
 	public double getMax() {
 		return max;
 	}
 
 	/**
-	 * @param max the max to set
+	 * @param max
 	 */
 	public void setMax(double max) {
 		this.max = max;
 	}
 
 	/**
-	 * @return the devStd
+	 * @return devStd
 	 */
 	public double getDevStd() {
 		return devStd;
 	}
 
 	/**
-	 * @param devStd the devStd to set
+	 * @param devStd
 	 */
 	public void setDevStd(double devStd) {
 		this.devStd = devStd;
 	}
 
 	/**
-	 * @return the sum
+	 * @return sum
 	 */
 	public double getSum() {
 		return sum;
 	}
 
 	/**
-	 * @param sum the sum to set
+	 * @param sum 
 	 */
 	public void setSum(double sum) {
 		this.sum = sum;
 	}
 
 	/**
-	 * @return the count
+	 * @return count
 	 */
 	public int getCount() {
 		return count;
 	}
 
 	/**
-	 * @param count the count to set
+	 * @param count
 	 */
 	public void setCount(int count) {
 		this.count = count;
 	}
 	
+	
+	/**
+	 * @return una stringa che rappresenta l'oggetto
+	 */
 	@Override
 	public String toString() {
 		return "Statistiche numeriche [avg = " + avg + ", min = " + min + ", max = " + max + ", devStd = " + devStd + ", sum = " + sum

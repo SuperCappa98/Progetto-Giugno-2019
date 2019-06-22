@@ -9,6 +9,9 @@ import java.lang.annotation.*;
 	String tipo();
 }
 
+/**
+ * Classe per modellare le righe del file CSV
+ */
 public class FondiSviluppoPuglia implements Serializable {
 	
 	@Metadati(nome="programma", tipo="String")
@@ -59,6 +62,26 @@ public class FondiSviluppoPuglia implements Serializable {
 	@Metadati(nome="provincia", tipo="String")
 	private String provincia;
 	
+	/**
+	 * Costruttore di un oggetto della classe FondiSviluppoPuglia
+	 * 
+	 * @param programma
+	 * @param asse
+	 * @param linea
+	 * @param azione
+	 * @param titoloProgetto
+	 * @param ambitoIntervento
+	 * @param finanziamentoProgetto
+	 * @param finanziamentoErogato
+	 * @param finanziamentoConcesso
+	 * @param beneficiario
+	 * @param formaGiuridica
+	 * @param codiceAteco
+	 * @param localizzazioneInvestimento
+	 * @param comune
+	 * @param codiceIstat
+	 * @param provincia
+	 */
 	public FondiSviluppoPuglia(String programma, String asse, String linea,
 			String azione, String titoloProgetto, String ambitoIntervento, 
 			double finanziamentoProgetto, double finanziamentoErogato, 
@@ -86,229 +109,233 @@ public class FondiSviluppoPuglia implements Serializable {
 	}
 
 	/**
-	 * @return the programma
+	 * @return programma
 	 */
 	public String getProgramma() {
 		return programma;
 	}
 
 	/**
-	 * @param programma the programma to set
+	 * @param programma 
 	 */
 	public void setProgramma(String programma) {
 		this.programma = programma;
 	}
 
 	/**
-	 * @return the asse
+	 * @return asse
 	 */
 	public String getAsse() {
 		return asse;
 	}
 
 	/**
-	 * @param asse the asse to set
+	 * @param asse
 	 */
 	public void setAsse(String asse) {
 		this.asse = asse;
 	}
 
 	/**
-	 * @return the linea
+	 * @return linea
 	 */
 	public String getLinea() {
 		return linea;
 	}
 
 	/**
-	 * @param linea the linea to set
+	 * @param linea
 	 */
 	public void setLinea(String linea) {
 		this.linea = linea;
 	}
 
 	/**
-	 * @return the azione
+	 * @return azione
 	 */
 	public String getAzione() {
 		return azione;
 	}
 
 	/**
-	 * @param azione the azione to set
+	 * @param azione
 	 */
 	public void setAzione(String azione) {
 		this.azione = azione;
 	}
 
 	/**
-	 * @return the titoloProgetto
+	 * @return titoloProgetto
 	 */
 	public String getTitoloProgetto() {
 		return titoloProgetto;
 	}
 
 	/**
-	 * @param titoloProgetto the titoloProgetto to set
+	 * @param titoloProgetto
 	 */
 	public void setTitoloProgetto(String titoloProgetto) {
 		this.titoloProgetto = titoloProgetto;
 	}
 
 	/**
-	 * @return the ambitoIntervento
+	 * @return ambitoIntervento
 	 */
 	public String getAmbitoIntervento() {
 		return ambitoIntervento;
 	}
 
 	/**
-	 * @param ambitoIntervento the ambitoIntervento to set
+	 * @param ambitoIntervento
 	 */
 	public void setAmbitoIntervento(String ambitoIntervento) {
 		this.ambitoIntervento = ambitoIntervento;
 	}
 
 	/**
-	 * @return the finanziamentoProgetto
+	 * @return finanziamentoProgetto
 	 */
 	public double getFinanziamentoProgetto() {
 		return finanziamentoProgetto;
 	}
 
 	/**
-	 * @param finanziamentoProgetto the finanziamentoProgetto to set
+	 * @param finanziamentoProgetto
 	 */
 	public void setFinanziamentoProgetto(double finanziamentoProgetto) {
 		this.finanziamentoProgetto = finanziamentoProgetto;
 	}
 
 	/**
-	 * @return the finanziamentoErogato
+	 * @return finanziamentoErogato
 	 */
 	public double getFinanziamentoErogato() {
 		return finanziamentoErogato;
 	}
 
 	/**
-	 * @param finanziamentoErogato the finanziamentoErogato to set
+	 * @param finanziamentoErogato
 	 */
 	public void setFinanziamentoErogato(double finanziamentoErogato) {
 		this.finanziamentoErogato = finanziamentoErogato;
 	}
 
 	/**
-	 * @return the finanziamentoConcesso
+	 * @return finanziamentoConcesso
 	 */
 	public double getFinanziamentoConcesso() {
 		return finanziamentoConcesso;
 	}
 
 	/**
-	 * @param finanziamentoConcesso the finanziamentoConcesso to set
+	 * @param finanziamentoConcesso
 	 */
 	public void setFinanziamentoConcesso(double finanziamentoConcesso) {
 		this.finanziamentoConcesso = finanziamentoConcesso;
 	}
 
 	/**
-	 * @return the beneficiario
+	 * @return beneficiario
 	 */
 	public String getBeneficiario() {
 		return beneficiario;
 	}
 
 	/**
-	 * @param beneficiario the beneficiario to set
+	 * @param beneficiario
 	 */
 	public void setBeneficiario(String beneficiario) {
 		this.beneficiario = beneficiario;
 	}
 
 	/**
-	 * @return the formaGiuridica
+	 * @return formaGiuridica
 	 */
 	public String getFormaGiuridica() {
 		return formaGiuridica;
 	}
 
 	/**
-	 * @param formaGiuridica the formaGiuridica to set
+	 * @param formaGiuridica
 	 */
 	public void setFormaGiuridica(String formaGiuridica) {
 		this.formaGiuridica = formaGiuridica;
 	}
 
 	/**
-	 * @return the codiceAteco
+	 * @return codiceAteco
 	 */
 	public String getCodiceAteco() {
 		return codiceAteco;
 	}
 
 	/**
-	 * @param codiceAteco the codiceAteco to set
+	 * @param codiceAteco
 	 */
 	public void setCodiceAteco(String codiceAteco) {
 		this.codiceAteco = codiceAteco;
 	}
 
 	/**
-	 * @return the localizzazioneInvestimento
+	 * @return localizzazioneInvestimento
 	 */
 	public String getLocalizzazioneInvestimento() {
 		return localizzazioneInvestimento;
 	}
 
 	/**
-	 * @param localizzazioneInvestimento the localizzazioneInvestimento to set
+	 * @param localizzazioneInvestimento
 	 */
 	public void setLocalizzazioneInvestimento(String localizzazioneInvestimento) {
 		this.localizzazioneInvestimento = localizzazioneInvestimento;
 	}
 
 	/**
-	 * @return the comune
+	 * @return comune
 	 */
 	public String getComune() {
 		return comune;
 	}
 
 	/**
-	 * @param comune the comune to set
+	 * @param comune
 	 */
 	public void setComune(String comune) {
 		this.comune = comune;
 	}
 
 	/**
-	 * @return the codiceIstat
+	 * @return codiceIstat
 	 */
 	public String getCodiceIstat() {
 		return codiceIstat;
 	}
 
 	/**
-	 * @param codiceIstat the codiceIstat to set
+	 * @param codiceIstat
 	 */
 	public void setCodiceIstat(String codiceIstat) {
 		this.codiceIstat = codiceIstat;
 	}
 
 	/**
-	 * @return the provincia
+	 * @return provincia
 	 */
 	public String getProvincia() {
 		return provincia;
 	}
 
 	/**
-	 * @param provincia the provincia to set
+	 * @param provincia
 	 */
 	public void setProvincia(String provincia) {
 		this.provincia = provincia;
 	}
 	
+	/**
+	 * @return una stringa che rappresenta l'oggetto
+	 */
+	@Override 
 	public String toString() {
 		return "FondiSviluppoPuglia [programma = " + programma + ", asse = " + asse +
 				", linea = " + linea + ", azione = " + azione + ", titoloProgetto = "
