@@ -58,10 +58,10 @@ dove si cercano i valori dell'attributo *finanziamentoProgetto* compresi tra 512
 ## Diagrammi UML
 
 **Diagrammi dei casi d'uso**
-
+![**Diagramma d**](https://raw.githubusercontent.com/SuperCappa98/Progetto-Giugno-2019/master/UML/Use%20Case%20Diagram.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3ODc0NTE3NCwtMTEyNTg2MzEzNCw4OT
-k1OTAxNTUsNjQ2ODcwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYs
-NTIyNzE0OTY1LC0xNDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xOD
-UxNTU0NDcwXX0=
+eyJoaXN0b3J5IjpbLTkwMzI1MTUyMCwxMzc4NzQ1MTc0LC0xMT
+I1ODYzMTM0LDg5OTU5MDE1NSw2NDY4NzA3NDIsNjQ2ODY4OTkx
+LDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0MzEzMTIzMzAsLTE4NT
+E1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
 -->
