@@ -55,10 +55,12 @@ Un esempio di richiesta statistiche con il filtro *$bt* è il seguente:
 
 dove si cercano i valori dell'attributo *finanziamentoProgetto* compresi tra 512197.5 e 300000.
 
-## Diagrammi
+## Diagrammi UML
+
+**strong text**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MDQ5NjAwNywtMTEyNTg2MzEzNCw4OT
+eyJoaXN0b3J5IjpbLTEwNDgzOTExMSwtMTEyNTg2MzEzNCw4OT
 k1OTAxNTUsNjQ2ODcwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYs
 NTIyNzE0OTY1LC0xNDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xOD
 UxNTU0NDcwXX0=
