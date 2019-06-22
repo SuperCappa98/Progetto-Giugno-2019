@@ -1,9 +1,6 @@
 package com.example.JavaProject.SviluppoDati;
 
-/**
- * ArrayList serve per manipolare i vettori dinamici in Java
- */
-import java.util.ArrayList;
+import java.util.*;
 
 public class Statistics {
 	
@@ -12,18 +9,18 @@ public class Statistics {
 	 * @param lista
 	 * @return avg
 	 */
-	 public static double getAvg(ArrayList<Double> lista) { //lista è un vettore dinamico che contiene elementi di tipo double 
+	 public static double getAvg(Vector<Double> lista) { //lista è un vettore dinamico che contiene elementi di tipo double 
 		 double avg;
 		 avg = (getSum(lista)/lista.size());
 		 return avg;
-	  }
+	 }
 	 
 	/**
 	 * 
 	 * @param lista 
 	 * @return min
 	 */
-	 public static double getMin(ArrayList<Double> lista) {
+	 public static double getMin(Vector<Double> lista) {
 		 double min = lista.get(0);                        //lista.get(0) ritorna il valore dell'elemento della lista in posizione 0
 		 for(int i = 1; i<lista.size(); i++) {
 		   if(min > lista.get(i)) {
@@ -38,7 +35,7 @@ public class Statistics {
       * @param lista
       * @return max
       */
-	  public static double getMax(ArrayList<Double> lista) {
+	  public static double getMax(Vector<Double> lista) {
 	     double max = lista.get(0);
 		 for(int i = 1; i<lista.size(); i++) {
 			 if(max < lista.get(i)) {
@@ -53,7 +50,7 @@ public class Statistics {
 	  * @param lista 
       * @return devStd
       */
-	  public static double getDevStd(ArrayList<Double> lista) {
+	  public static double getDevStd(Vector<Double> lista) {
 	     double avg = getAvg(lista);                    
 	     double sommaScarti = 0;
 	     for(double elemento : lista) {                   //il ciclo continua fino a che non ha scorso tutti gli elementi della lista
@@ -61,14 +58,14 @@ public class Statistics {
 		 }
 	     double devStd = Math.sqrt(sommaScarti/lista.size());
 		 return devStd;
-	   }
+	  }
 	  
      /**
 	  * 
 	  * @param lista
       * @return sum
 	  */
-	  public static double getSum(ArrayList<Double> lista) {
+	  public static double getSum(Vector<Double> lista) {
 	     double sum = 0;
 		 for(double elemento : lista)
 		    sum += elemento;
@@ -80,15 +77,15 @@ public class Statistics {
 	   * @param str
 	   * @return stringStat
 	   */ 
-	  public static ArrayList<StrStatistics> getStringStatistics(ArrayList<String> str){  //restituisce una lista di oggetti StrStatistics
-		  ArrayList<StrStatistics> stringStat = new  ArrayList<StrStatistics>();			  
+	  public static Vector<StrStatistics> getStringStatistics(Vector<String> str){  //restituisce una lista di oggetti StrStatistics
+		  Vector<StrStatistics> stringStat = new  Vector<StrStatistics>();			  
 		  String stringa;
 		  int ripSupporto;
 		  StrStatistics supporto;
 		  Boolean flagPresenza;
-		  for(int i = 0;i < str.size();i++){ 					 //utilizzo il metodo size di ArrayList
+		  for(int i = 0;i < str.size();i++){ 					 //utilizzo il metodo size di Vector
 			  flagPresenza = false;								 
-			  stringa = str.get(i);							     //utilizzo metodo get di ArrayList
+			  stringa = str.get(i);							     //utilizzo metodo get di Vector
 	          ripSupporto = 1;
 		      for(int j = 0;j < stringStat.size() && !flagPresenza;j++){
 		          if(stringa.equals(stringStat.get(j).getStringa())){ //confronta stringa con il campo stringa dell'elemento j-esimo di stringStat
@@ -104,6 +101,6 @@ public class Statistics {
 		    }
 		  }
 		  return stringStat; 									 
-		}
+	  }
 
 }
