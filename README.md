@@ -41,10 +41,12 @@ Come già accennato, per i dati e le statistiche è possibile applicare dei part
  - **$eq** : questo filtro permette di selezionare tutti gli oggetti con valore dell' attributo specificato uguale a quello richiesto;
  - **$not** : questo filtro permette di selezionare tutti gli oggetti con valore dell'attributo specificato diverso da quello richiesto;
  - **$or** : questo filtro permette di selezionare tutti gli oggetti che hanno un valore uguale ad almeno uno dei due valori dell'attributo specificato;
- - **gt** : questo filtro permette di selezionare tutti gli oggetti con valore dell'attributo numerico specificato
+ - **$gt** : questo filtro permette di selezionare tutti gli oggetti con valore dell'attributo numerico specificato strettamente maggiore di quello richiesto;
+ - **$lt** : questo filtro permette di selezionare tutti 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjU4NjMxMzQsODk5NTkwMTU1LDY0Nj
-g3MDc0Miw2NDY4Njg5OTEsNTQyMTI1Mzk2LDUyMjcxNDk2NSwt
-MTQzMTMxMjMzMCwtMTg1MTU1NDQ3MCwtMTg1MTU1NDQ3MF19
+eyJoaXN0b3J5IjpbNzY4MzE2NDQ3LC0xMTI1ODYzMTM0LDg5OT
+U5MDE1NSw2NDY4NzA3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1
+MjI3MTQ5NjUsLTE0MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NT
+E1NTQ0NzBdfQ==
 -->
