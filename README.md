@@ -45,11 +45,14 @@ Come già accennato, per i dati e le statistiche è possibile applicare dei part
  - **$lt** : questo filtro permette di selezionare tutti gli oggetti con valore dell'attributo numerico specificato strettamente minore di quello richiesto;
  - **$bt** : questo filtro permette di selezionare tutti gli oggetti con un valore dell'attributo numerico specificato compreso tra i due valori richiesti.
 
-Quindi l'utente, a seconda del filtro richiesto, dovrà specificare uno o due valori dell'attributo di cui si vuole avere informazioni 
-> Nota bene: se si utilizzano filtri per attributi di tipo numerico, non si possono selezionare attributi di tipo String 
+Quindi l'utente, a seconda del filtro richiesto, dovrà specificare uno o due valori dell'attributo di cui si vuole avere informazioni. 
+
+> Nota bene: se si utilizzano filtri per attributi di tipo numerico, non si possono selezionare attributi di tipo String e nel caso del filtro *$bt* il primo valore inserito dovrà essere minore del secondo.
+
+Un esempio di chiamata con il filtro ***$bt***
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTc2ODk0OCwtMTEyNTg2MzEzNCw4OT
+eyJoaXN0b3J5IjpbMTkxNzI5Mjc2NCwtMTEyNTg2MzEzNCw4OT
 k1OTAxNTUsNjQ2ODcwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYs
 NTIyNzE0OTY1LC0xNDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xOD
 UxNTU0NDcwXX0=
