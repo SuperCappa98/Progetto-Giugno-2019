@@ -7,15 +7,34 @@ import com.example.JavaProject.SviluppoDati.*;
 
 import org.springframework.web.bind.annotation.*;
 
-
+/**
+ * Classe Controller per gestire le varie funzionalità API REST fornite da Spring Boot.<br>
+ * In particolare la seguente classe implementa i metodi di richiesta dei metadati, dei 
+ * dati e delle statistiche, eventualmente con i filtri specificati.
+ */
 @RestController
 public class Controller {
 	
+	/**
+	 * Metodo per la richiesta tramite GET dei metadati.
+	 * 
+	 * @return metadati in formato JSON 
+	 */
 	@RequestMapping(value="/metadata", method=RequestMethod.GET)
 	public Vector<Metadata> MetadataRequest(){
 		return Reading.ReadingMetadata(new File("metadata file.dat"));
 	}
 	
+	/**
+	 * Metodo per la richiesta tramite GET dei dati secondo l'eventuale filtro specificato.
+	 * 
+	 * @param filter 	Filtro specificato nella richiesta, se presente
+	 * @param attribute Attributo su cui viene applicato il filtro ai dati
+	 * @param value1	Valore primario utilizzato nel filtraggio
+	 * @param value2	Valore secondario utilizzato nel filtraggio (solo per gli operatori $or e $bt)
+	 * 
+	 * @return dati in formato JSON o eventuali messaggi di errore
+	 */
 	@RequestMapping(value="/data", method = RequestMethod.GET)
 	public Object DataRequest(@RequestParam(value = "filter", defaultValue = "vuoto")String filter, @RequestParam(value = "attribute", defaultValue = "vuoto")String attribute, String value1,@RequestParam(value="value2", defaultValue = "0") String value2){
 		Vector<FondiSviluppoPuglia> v = Reading.ReadingData(new File("data file.dat"));
@@ -55,6 +74,17 @@ public class Controller {
 		}
 	}
 	
+	/**
+	 * Metodo per la richiesta tramite GET delle statistiche relative all'attributo indicato
+	 * sia che esso sia di tipo numerico o di tipo String secondo l'eventuale filtro specificato.
+	 * 
+	 * @param filter	Filtro specificato nella richiesta, se presente
+	 * @param attribute	Attributo del quale si vuole conoscere le statistiche su cui viene applicato il filtro
+	 * @param value1	Valore primario utilizzato nel filtraggio
+	 * @param value2	Valore secondario utilizzato nel filtraggio (solo per gli operatori $or e $bt)
+	 * 
+	 * @return statistiche sui dati in formato JSON o eventuali messaggi di errore
+	 */
 	@RequestMapping(value="/statistics", method = RequestMethod.GET)
 	public Object StatisticsRequest(@RequestParam(value="filter", defaultValue = "vuoto")String filter, String attribute, String value1, @RequestParam(value = "value2", defaultValue = "0")String value2){
 		Vector<Object> attributes = new Vector<Object>();

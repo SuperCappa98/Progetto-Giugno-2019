@@ -3,8 +3,24 @@ package com.example.JavaProject.SviluppoDati;
 import java.io.*;
 import java.util.*;
 
+/**
+ * Classe che si occupa del Parsing e della Serializzazione dei dati.
+ */
 public class ParsingAndSerializationData {
+	
+	/**
+	 * Metodo static che si occupa del Parsing dei dati a partire dal file letto.
+	 * 
+	 * @return Vector di oggetti di tipo FondiSviluppoPuglia
+	 */
 	public static Vector<FondiSviluppoPuglia> getData() {
+		/* 
+		 * Il delimitatore usato è rappresentato da una virgola racchiusa tra virgolette
+		 * così da non provocare errori visto la presenza di diversi numeri con la virgola
+		 * al posto del punto. Inoltre per fare il parsing di tali numeri con la virgola o
+		 * gli eventuali n.d. è stato utilizzato il metodo replace della classe String per
+		 * rimpiazzare le prime con i punti e i secondi con il valore 0.
+		 */
 		String DELIMITER = "\",(?=([^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)\"";
 		Vector<FondiSviluppoPuglia> v = new Vector<FondiSviluppoPuglia>();
 		try (BufferedReader br = new BufferedReader(new FileReader("data-set.csv"))) {
@@ -30,11 +46,17 @@ public class ParsingAndSerializationData {
 			i.printStackTrace();
 		}
 		for(FondiSviluppoPuglia item: v) {		
-			System.out.println(v.toString());
+			System.out.println(v.toString());	//stampa i vari oggetti della classe FondiSviluppoPuglia tramite un for each dopo aver fatto il parsing e averli inseriti in un vettore
 		}
 		return v;
 	}
 	
+	/**
+	 * Metodo static che si occupa della serializzazione dei dati dal Vector di oggetti di tipo FondiSviluppoPuglia.
+	 * 
+	 * @param file	File su cui vengono serializzati gli oggetti
+	 * @param data	Vector di FondiSviluppoPuglia da dove vengono presi i dati
+	 */
 	public static void SerializationData(File file, Vector<FondiSviluppoPuglia> data) {
 		   try {			   
 			   ObjectOutputStream output = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(file)));
