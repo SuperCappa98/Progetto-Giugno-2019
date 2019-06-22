@@ -49,11 +49,12 @@ Quindi l'utente, a seconda del filtro richiesto, dovrà specificare uno o due va
 
 > Nota bene: se si utilizzano filtri per attributi di tipo numerico, non si possono selezionare attributi di tipo String e nel caso del filtro *$bt* il primo valore inserito dovrà essere minore del secondo.
 
-Un esempio di chiamata con il filtro ***$bt***
+Un esempio di richiesta statistiche con il filtro *$bt* è il seguente:
+> 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzI5Mjc2NCwtMTEyNTg2MzEzNCw4OT
-k1OTAxNTUsNjQ2ODcwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYs
-NTIyNzE0OTY1LC0xNDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xOD
-UxNTU0NDcwXX0=
+eyJoaXN0b3J5IjpbNzc3NzIzNTMwLC0xMTI1ODYzMTM0LDg5OT
+U5MDE1NSw2NDY4NzA3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1
+MjI3MTQ5NjUsLTE0MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NT
+E1NTQ0NzBdfQ==
 -->
