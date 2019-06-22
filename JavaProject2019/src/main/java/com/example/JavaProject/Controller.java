@@ -61,23 +61,6 @@ public class Controller {
 		try{
 			Method metodo = FondiSviluppoPuglia.class.getMethod("get" + attribute.substring(0,1).toUpperCase() + attribute.substring(1));
 			Vector<FondiSviluppoPuglia> v = Reading.ReadingData(new File("data file.dat"));
-			Vector<Metadata> metadata = Reading.ReadingMetadata(new File("metadata file.dat"));
-			boolean[] checkAttribute = new boolean[metadata.size()];
-			for(int i=0; i<metadata.size(); i++) {
-				if(!attribute.equals(metadata.get(i).getNome())) {
-					checkAttribute[i] = true;
-				}
-				else {
-					checkAttribute[i] = false;
-				}
-			}
-			boolean isNotAttribute = true;
-			for(int i=0; i<metadata.size(); i++) {
-				isNotAttribute &= checkAttribute[i];
-			}
-			if(isNotAttribute) {
-				return "Attributo inserito non valido";
-			}
 			if(filter.equals("vuoto")) {
 				for(FondiSviluppoPuglia obj : v) {
 					attributes.add(metodo.invoke(obj));
@@ -94,6 +77,7 @@ public class Controller {
 			}
 		} catch(NoSuchMethodException e) {
 			e.printStackTrace();
+			return "Attributo inserito non valido";
 		} catch(IllegalAccessException e) {
 			e.printStackTrace();
 		} catch(InvocationTargetException e) {
