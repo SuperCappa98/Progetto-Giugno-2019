@@ -1,11 +1,12 @@
 # Progetto Giugno 2019
 >Burini Lisa: S1081527
 >Cappanera Simone: S1081623
-##
+## Istruzioni per l'uso
+La seguente applicazione
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyODc3MTkwMSwtMTQzMTMxMjMzMCwtMT
-g1MTU1NDQ3MCwtMTg1MTU1NDQ3MF19
+eyJoaXN0b3J5IjpbLTE3MjExNzUxMDIsLTE0MzEzMTIzMzAsLT
+E4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
 -->
