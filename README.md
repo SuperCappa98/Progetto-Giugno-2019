@@ -16,9 +16,9 @@ L'applicazione Spring si occupa infine di implementare le risposte alle richiest
 
 ## Istruzioni per l'uso
 
-
+Una volta scaricato il progetto da GitHub ed averlo aperto con il proprio IDE 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMTE3MjQ3OCw2NDY4NzA3NDIsNjQ2OD
+eyJoaXN0b3J5IjpbMjA2MjI3NDIwNSw2NDY4NzA3NDIsNjQ2OD
 Y4OTkxLDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0MzEzMTIzMzAs
 LTE4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
 -->
