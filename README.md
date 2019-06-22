@@ -1,5 +1,5 @@
 # Progetto Giugno 2019
->Burini Lisa: S1081527
+>Burini Lisa: S1081527 <br>
 >Cappanera Simone: S1081623
 
 ## Che cosa fa questo progetto?
@@ -32,11 +32,16 @@ Per ricevere i dati o le statistiche relative ad un attributo bisognerà richied
 
 dove nomeAttributo è appunto il nome dell'attributo richiesto.
 Facciamo due piccoli esempi:
-> http://localhost:8080/statistics?attribute=comune
+
+> http://localhost:8080/statistics?attribute=comune <br>
 > http://localhost:8080/data?attribute=codiceIstat
 
+Come già accen
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNjM2OTMzMiw4OTk1OTAxNTUsNjQ2OD
-cwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYsNTIyNzE0OTY1LC0x
-NDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xODUxNTU0NDcwXX0=
+eyJoaXN0b3J5IjpbNTU4MTcxMzgwLDg5OTU5MDE1NSw2NDY4Nz
+A3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0
+MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
 -->
