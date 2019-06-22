@@ -17,36 +17,41 @@ public class Controller {
 	}
 	
 	@RequestMapping(value="/data", method = RequestMethod.GET)
-	public Object DataRequest(@RequestParam(value = "filter", defaultValue = "vuoto")String filter, String attribute, String value1,@RequestParam(value="value2", defaultValue = "0") String value2){
+	public Object DataRequest(@RequestParam(value = "filter", defaultValue = "vuoto")String filter, @RequestParam(value = "attribute", defaultValue = "vuoto")String attribute, String value1,@RequestParam(value="value2", defaultValue = "0") String value2){
 		Vector<FondiSviluppoPuglia> v = Reading.ReadingData(new File("data file.dat"));
-		Vector<Metadata> metadata = Reading.ReadingMetadata(new File("metadata file.dat"));
-		boolean[] checkAttribute = new boolean[metadata.size()];
-		for(int i=0; i<metadata.size(); i++) {
-			if(!attribute.equals(metadata.get(i).getNome())) {
-				checkAttribute[i] = true;
-			}
-			else {
-				checkAttribute[i] = false;
-			}
-		}
-		boolean isNotAttribute = true;
-		for(int i=0; i<metadata.size(); i++) {
-			isNotAttribute &= checkAttribute[i];
-		}
-		if(isNotAttribute) {
-			return "Attributo inserito non valido";
-		}
-		if(filter.equals("vuoto"))
+		if(attribute.equals("vuoto")) {
 			return v;
+		}
 		else {
-			Filtro filtro = new Filtro(filter);
-			if(!filtro.isExist())
-				return "Filtro usato non esistente";
-			Vector<FondiSviluppoPuglia> output = (Vector<FondiSviluppoPuglia>)filtro.Research(attribute, value1, value2, v);
-			if(output.size() == 0)
-				return "Nessun elemento corrisponde a questa richiesta";
-			else
-				return output;
+			Vector<Metadata> metadata = Reading.ReadingMetadata(new File("metadata file.dat"));
+			boolean[] checkAttribute = new boolean[metadata.size()];
+			for(int i=0; i<metadata.size(); i++) {
+				if(!attribute.equals(metadata.get(i).getNome())) {
+					checkAttribute[i] = true;
+				}
+				else {
+					checkAttribute[i] = false;
+				}
+			}
+			boolean isNotAttribute = true;
+			for(int i=0; i<metadata.size(); i++) {
+				isNotAttribute &= checkAttribute[i];
+			}
+			if(isNotAttribute) {
+				return "Attributo inserito non valido";
+			}
+			if(filter.equals("vuoto"))
+				return v;
+			else {
+				Filtro filtro = new Filtro(filter);
+				if(!filtro.isExist())
+					return "Filtro usato non esistente";
+				Vector<FondiSviluppoPuglia> output = (Vector<FondiSviluppoPuglia>)filtro.Research(attribute, value1, value2, v);
+				if(output.size() == 0)
+					return "Nessun elemento corrisponde a questa richiesta";
+				else
+					return output;
+			}
 		}
 	}
 	

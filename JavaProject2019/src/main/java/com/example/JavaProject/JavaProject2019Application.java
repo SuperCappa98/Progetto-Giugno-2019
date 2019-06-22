@@ -12,7 +12,7 @@ public class JavaProject2019Application {
 
 	public static void main(String[] args) {
 		//Download del file CSV
-		DownloadCSV.main(args);
+		DownloadCSV.ScanURL();
 		
 		//Parsing e serializzazione dei dati
 		Vector<FondiSviluppoPuglia> data = ParsingAndSerializationData.getData();

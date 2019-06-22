@@ -18,13 +18,10 @@ import org.json.simple.parser.ParseException;
 
 public class DownloadCSV {
 
-	public static void main(String[] args) {
+	public static void ScanURL() {
 
 		String url = "https://www.dati.gov.it/api/3/action/package_show?id=e706b4f6-b6ee-42eb-a90c-eac4448e8c82";
-		if(args.length == 1)
-			url = args[0]; 
 		try {
-			
 			URLConnection openConnection = new URL(url).openConnection();
 			openConnection.addRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
 			InputStream in = openConnection.getInputStream();
