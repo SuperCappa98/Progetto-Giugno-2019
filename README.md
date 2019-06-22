@@ -12,9 +12,9 @@ Fatto ciò, effettua il parsing e la serializzazione dei dati e in aggiunta effe
 
 >Nota bene: Durante il parsing dei dati si è reso necessario usare come delimitatore la virgola racchiusa tra virgolette (guardare il codice). Questo perchè erano presenti nel CSV dati numerici con la virgola al posto del punto e quindi questo portava a un errore quando si andava a fare il parse di quei dati.
 
-L'applicazione Spring si occupa infine di implementare le risposte 
+L'applicazione Spring si occupa infine di implementare le risposte alle richieste dell'utente ritornando 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NzkwNjk3Nyw2NDY4NzA3NDIsNjQ2OD
-Y4OTkxLDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0MzEzMTIzMzAs
-LTE4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
+eyJoaXN0b3J5IjpbMTE5NDQwMjgwLDY0Njg3MDc0Miw2NDY4Nj
+g5OTEsNTQyMTI1Mzk2LDUyMjcxNDk2NSwtMTQzMTMxMjMzMCwt
+MTg1MTU1NDQ3MCwtMTg1MTU1NDQ3MF19
 -->
