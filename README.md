@@ -38,11 +38,12 @@ Facciamo due piccoli esempi:
 
 Come già accennato, per i dati e le statistiche è possibile applicare dei particolari filtri che restituiranno i dati filtrati secondo le eventuali richieste. I tipi di filtri (3 di tipo logico e 3 di tipo condizionale) sono elencati di seguito:
 
- - **$eq** : questo filtro permette di selezionare gli oggetti con attributo specificato uguale a quello richiesto;
- - **$not** : questo filtro permette di selezionare gli oggetti con
+ - **$eq** : questo filtro permette di selezionare tutti gli oggetti con valore dell' attributo specificato uguale a quello richiesto;
+ - **$not** : questo filtro permette di selezionare tutti gli oggetti con valore dell'attributo specificato diverso da quello richiesto;
+ - **$or** : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTA2NzcxNTcsODk5NTkwMTU1LDY0Nj
-g3MDc0Miw2NDY4Njg5OTEsNTQyMTI1Mzk2LDUyMjcxNDk2NSwt
-MTQzMTMxMjMzMCwtMTg1MTU1NDQ3MCwtMTg1MTU1NDQ3MF19
+eyJoaXN0b3J5IjpbNTQxNTU4NDAxLDg5OTU5MDE1NSw2NDY4Nz
+A3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0
+MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
 -->
