@@ -21,7 +21,7 @@ public class Filtro {
 	 * 
 	 * @param attributo della classe FondiSviluppoPuglia
 	 * @param dato1 riferimento per il filtraggio
-	 * @param dato2 riferimento per il filtraggio conl'operatore $or
+	 * @param dato2 riferimento per il filtraggio con gli operatori $or e $bt
 	 * @param listaInput Lista data in input su cui il metodo farà il filtraggio
 	 * @return Lista filtrata
 	 */
@@ -51,6 +51,47 @@ public class Filtro {
 		}
 		catch(NumberFormatException e) {
 			isNumber = false;
+		}
+		
+		//Logical operator $eq
+		//La lista in output contiene tutti i valori della lista in input che corrispondono al valore di riferimento
+		if(modelloFiltro.equals("$eq")) {
+			if(isNumber) {
+				try {
+					for(FondiSviluppoPuglia obj : listaInput) {
+						if(metodo.invoke(obj) instanceof Double) {
+							Double temp = (Double)metodo.invoke(obj);
+							if(temp.equals(datoDouble1)) {
+								listaOutput.add(obj);
+							}
+						}
+					}
+				}
+				catch(IllegalAccessException e) {
+					e.printStackTrace();
+				}
+				catch(InvocationTargetException e) {
+					e.printStackTrace();
+				}
+			}
+			else {
+				try {
+					for(FondiSviluppoPuglia obj : listaInput) {
+						if(metodo.invoke(obj) instanceof String) {
+							String temp = (String)metodo.invoke(obj);
+							if(temp.equals(dato1)) {
+								listaOutput.add(obj);
+							}
+						}
+					}
+				}
+				catch(IllegalAccessException e) {
+					e.printStackTrace();
+				}
+				catch(InvocationTargetException e) {
+					e.printStackTrace();
+				}
+			}
 		}
 		
 		
@@ -172,6 +213,30 @@ public class Filtro {
 						if(metodo.invoke(obj) instanceof Double) {
 							Double temp = (Double)metodo.invoke(obj);
 							if(temp.compareTo(datoDouble1) < 0) {
+								listaOutput.add(obj);
+							}
+						}
+					}
+				}
+				catch(IllegalAccessException e) {
+					e.printStackTrace();
+				}
+				catch(InvocationTargetException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		
+		
+		//Conditional operator $bt
+	    //La lista in output contiene tutti i valori compresi tra i due valori di riferimento
+		if(modelloFiltro.equals("$bt")) {
+			if(isNumber) {
+				try {
+					for(FondiSviluppoPuglia obj : listaInput) {
+						if(metodo.invoke(obj) instanceof Double) {
+							Double temp = (Double)metodo.invoke(obj);
+							if(temp.compareTo(datoDouble1) >= 0 && temp.compareTo(datoDouble2) <= 0) {
 								listaOutput.add(obj);
 							}
 						}
