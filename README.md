@@ -16,7 +16,7 @@ L'applicazione Spring si occupa infine di implementare le risposte alle richiest
 
 ## Istruzioni per l'uso
 
-Una volta scaricato il progetto da GitHub ed averlo aperto con il proprio IDE Java (quello utilizzato per sviluppare il progetto è stato Eclipse) ed essersi assicurato che si abbiano installate tutte le librerie necessarie (in particolare nel nostro caso era stata indispensabile importare la libreria json-simple-1.1.1.jar), l'utente dovrà far partire l'applicazione come Spring Boot App e aprire il proprio Browser Web o un programma come Postman, che permette di testare le varie funzionalità API REST. Le richieste verranno scritte come URL come in questo esempio:
+Una volta scaricato il progetto da GitHub ed averlo aperto con il proprio IDE Java (quello utilizzato per sviluppare il progetto è stato Eclipse) ed essersi assicurato che si abbiano installate tutte le librerie necessarie (in particolare nel nostro caso era stata indispensabile importare la libreria json-simple-1.1.1.jar), l'utente dovrà far partire l'applicazione come Spring Boot App e aprire il proprio Browser Web o un programma come Postman, che permette di testare le varie funzionalità API REST. Le richieste verranno scritte come URL con la seguente sintassi:
 
 > http://localhost:8080/"tipologiaRichiesta"
 
@@ -26,10 +26,10 @@ All'interno della query string, la stringa *tipologiaRichiesta* indica il tipo d
  - **data** : Restituisce i dati in formato JSON che sono contenuti all'interno del data-set;
  - **statistics** : Restistuisce le statistiche in formato JSON relative a un determinato attributo specificato;
 
-Per ricevere le statistiche relavite ad un attribut
+Per ricevere i dati o le statistiche relavite ad un attributo bisognerà richiederl
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk0Mzc5NTM4LDg5OTU5MDE1NSw2NDY4Nz
-A3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0
-MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
+eyJoaXN0b3J5IjpbLTEwODM5NjIwMDAsODk5NTkwMTU1LDY0Nj
+g3MDc0Miw2NDY4Njg5OTEsNTQyMTI1Mzk2LDUyMjcxNDk2NSwt
+MTQzMTMxMjMzMCwtMTg1MTU1NDQ3MCwtMTg1MTU1NDQ3MF19
 -->
