@@ -16,9 +16,9 @@ L'applicazione Spring si occupa infine di implementare le risposte alle richiest
 
 ## Istruzioni per l'uso
 
-Una volta scaricato il progetto da GitHub ed averlo aperto con il proprio IDE Java (quello utilizzato per sviluppare il progetto è stato Eclipse) ed essersi assicurati che si abbiano installate tutte le librerie necessarie (in particolare nel nostro caso era stata indispensabile importare la libreria 
+Una volta scaricato il progetto da GitHub ed averlo aperto con il proprio IDE Java (quello utilizzato per sviluppare il progetto è stato Eclipse) ed essersi assicurato che si abbiano installate tutte le librerie necessarie (in particolare nel nostro caso era stata indispensabile importare la libreria json-simple-1.1.1.jar), l'utente dovrà 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5OTU4NzYzLDg5OTU5MDE1NSw2NDY4Nz
-A3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0
-MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
+eyJoaXN0b3J5IjpbLTE0NDUxNjUzMTMsODk5NTkwMTU1LDY0Nj
+g3MDc0Miw2NDY4Njg5OTEsNTQyMTI1Mzk2LDUyMjcxNDk2NSwt
+MTQzMTMxMjMzMCwtMTg1MTU1NDQ3MCwtMTg1MTU1NDQ3MF19
 -->
