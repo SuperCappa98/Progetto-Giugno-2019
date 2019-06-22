@@ -40,10 +40,10 @@ Come già accennato, per i dati e le statistiche è possibile applicare dei part
 
  - **$eq** : questo filtro permette di selezionare tutti gli oggetti con valore dell' attributo specificato uguale a quello richiesto;
  - **$not** : questo filtro permette di selezionare tutti gli oggetti con valore dell'attributo specificato diverso da quello richiesto;
- - **$or** : 
+ - **$or** : questo filtro permette di selezionare tutti gli oggetti che hanno almeno un valore dell'attributo specificato 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxNTU4NDAxLDg5OTU5MDE1NSw2NDY4Nz
-A3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0
-MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
+eyJoaXN0b3J5IjpbMTAyMDUxMDY1NSw4OTk1OTAxNTUsNjQ2OD
+cwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYsNTIyNzE0OTY1LC0x
+NDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xODUxNTU0NDcwXX0=
 -->
