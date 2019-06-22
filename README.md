@@ -12,7 +12,7 @@ Fatto ciò, effettua il parsing e la serializzazione dei dati e in aggiunta effe
 
 >Nota bene: Durante il parsing dei dati si è reso necessario usare come delimitatore la virgola racchiusa tra virgolette (guardare il codice). Questo perchè erano presenti nel CSV dati numerici con la virgola al posto del punto e quindi questo portava a un errore quando si andava a fare il parse di quei dati.
 
-L'applicazione Spring si occupa infine di implementare le risposte alle richieste dell'utente ritornando i metadati, i dati e le statistiche con eventuali filtri.
+L'applicazione Spring si occupa infine di implementare le risposte alle richieste dell'utente restituendo i metadati, i dati e le statistiche con eventuali filtri applicati.
 
 ## Istruzioni per l'uso
 
@@ -22,12 +22,12 @@ Una volta scaricato il progetto da GitHub ed averlo aperto con il proprio IDE Ja
 
 All'interno della query string, la stringa *tipologiaRichiesta* indica il tipo di informazione che si vuole richiedere scegliendo tra queste tre possibilità:
 
- - **metadata** : Restituisce i metadati in formato JSON relativi agli attributi
- - **data** : Restituisce i dati in formato JSON che sono contenuti all'interno del data-set
- - **statistics** : Resti
+ - **metadata** : Restituisce i metadati in formato JSON relativi agli attributi;
+ - **data** : Restituisce i dati in formato JSON che sono contenuti all'interno del data-set;
+ - **statistics** : Restistuisce le statistiche in formato JSON relative a un determinato attributo specificato
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTM1MzcxMCw4OTk1OTAxNTUsNjQ2OD
-cwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYsNTIyNzE0OTY1LC0x
-NDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xODUxNTU0NDcwXX0=
+eyJoaXN0b3J5IjpbNDk5MTE1MjM0LDg5OTU5MDE1NSw2NDY4Nz
+A3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0
+MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
 -->
