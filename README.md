@@ -24,10 +24,12 @@ All'interno della query string, la stringa *tipologiaRichiesta* indica il tipo d
 
  - **metadata** : Restituisce i metadati in formato JSON relativi agli attributi;
  - **data** : Restituisce i dati in formato JSON che sono contenuti all'interno del data-set;
- - **statistics** : Restistuisce le statistiche in formato JSON relative a un determinato attributo specificato
+ - **statistics** : Restistuisce le statistiche in formato JSON relative a un determinato attributo specificato;
+
+Per ricevere le statistiche relavite ad un attribut
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5MTE1MjM0LDg5OTU5MDE1NSw2NDY4Nz
+eyJoaXN0b3J5IjpbMjk0Mzc5NTM4LDg5OTU5MDE1NSw2NDY4Nz
 A3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0
 MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
 -->
