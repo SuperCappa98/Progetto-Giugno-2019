@@ -36,12 +36,12 @@ Facciamo due piccoli esempi:
 > http://localhost:8080/statistics?attribute=comune <br>
 > http://localhost:8080/data?attribute=codiceIstat
 
-Come già accennato, per i dati e le statistiche è possibile applicare dei particolari filtri che restituiranno i dati filtrati secondo le eventuali richieste. I tipi di filtri (3 di tipo logico e 3 di tipo condizionale)
+Come già accennato, per i dati e le statistiche è possibile applicare dei particolari filtri che restituiranno i dati filtrati secondo le eventuali richieste. I tipi di filtri (3 di tipo logico e 3 di tipo condizionale) sono elencati di seguito:
 
-
+ - **$eq** : questo filtro permette di 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMjI5ODY1Miw4OTk1OTAxNTUsNjQ2OD
-cwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYsNTIyNzE0OTY1LC0x
-NDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xODUxNTU0NDcwXX0=
+eyJoaXN0b3J5IjpbLTE4NzQ2OTQ5MjYsODk5NTkwMTU1LDY0Nj
+g3MDc0Miw2NDY4Njg5OTEsNTQyMTI1Mzk2LDUyMjcxNDk2NSwt
+MTQzMTMxMjMzMCwtMTg1MTU1NDQ3MCwtMTg1MTU1NDQ3MF19
 -->
