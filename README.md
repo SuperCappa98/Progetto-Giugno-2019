@@ -57,10 +57,10 @@ dove si cercano i valori dell'attributo *finanziamentoProgetto* compresi tra 512
 
 ## Diagrammi UML
 
-**strong text**
+**Diagrammi dei casi d'uso**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDgzOTExMSwtMTEyNTg2MzEzNCw4OT
+eyJoaXN0b3J5IjpbMTM3ODc0NTE3NCwtMTEyNTg2MzEzNCw4OT
 k1OTAxNTUsNjQ2ODcwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYs
 NTIyNzE0OTY1LC0xNDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xOD
 UxNTU0NDcwXX0=
