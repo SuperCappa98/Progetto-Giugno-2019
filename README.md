@@ -9,10 +9,10 @@ Il seguente progetto seguendo le specifiche assegnate dai professori e partendo 
 
 effettua il download del data-set che contiene dati in formato CSV dopo aver effettuato un'opportuna decodifica del JSON che contiene l'URL utile per scaricare il file gestendo anche il caso in cui il file sia già presente. In tal caso infatti il file non verrà riscaricato. 
 Fatto ciò, effettua il parsing e la serializzazione dei dati e in aggiunta effettua lo stesse procedure anche per i metadati. 
->Nota bene: Durante il parsing dei dati si è reso necessario usare il delimitatore "\",(?=([^\\\"]*\\\"[^\\\"]*\\\")*[^\\\"]*$)\"" che prende come delimitatore la virgola racchiusa tra v
+>Nota bene: Durante il parsing dei dati si è reso necessario usare come delimitatore la virgola racchiusa tra virgolette (guardare il codice). Questo perchè 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTIxMTA1NSw1NDIxMjUzOTYsNTIyNz
-E0OTY1LC0xNDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xODUxNTU0
-NDcwXX0=
+eyJoaXN0b3J5IjpbNjQ2ODY4OTkxLDU0MjEyNTM5Niw1MjI3MT
+Q5NjUsLTE0MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NTE1NTQ0
+NzBdfQ==
 -->
