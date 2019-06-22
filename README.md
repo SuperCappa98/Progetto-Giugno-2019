@@ -16,9 +16,10 @@ L'applicazione Spring si occupa infine di implementare le risposte alle richiest
 
 ## Istruzioni per l'uso
 
-Una volta scaricato il progetto da GitHub ed averlo aperto con il proprio IDE Java (quello utilizzato per sviluppare il progetto è stato Eclipse) ed essersi assicurato che si abbiano installate tutte le librerie necessarie (in particolare nel nostro caso era stata indispensabile importare la libreria json-simple-1.1.1.jar), l'utente dovrà far partire l'applicazione come Spring Boot App e aprire il proprio Browser Web o un programma come Postman, che permette di testare le varie funzionalità API REST. Le richieste verranno scritte come URL con 
+Una volta scaricato il progetto da GitHub ed averlo aperto con il proprio IDE Java (quello utilizzato per sviluppare il progetto è stato Eclipse) ed essersi assicurato che si abbiano installate tutte le librerie necessarie (in particolare nel nostro caso era stata indispensabile importare la libreria json-simple-1.1.1.jar), l'utente dovrà far partire l'applicazione come Spring Boot App e aprire il proprio Browser Web o un programma come Postman, che permette di testare le varie funzionalità API REST. Le richieste verranno scritte come URL come in questo esempio:
+> http://localhost:8080/"tipologiaRichiesta
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzc1MDY2MDIsODk5NTkwMTU1LDY0Nj
+eyJoaXN0b3J5IjpbLTE3MDAyNzU5MTgsODk5NTkwMTU1LDY0Nj
 g3MDc0Miw2NDY4Njg5OTEsNTQyMTI1Mzk2LDUyMjcxNDk2NSwt
 MTQzMTMxMjMzMCwtMTg1MTU1NDQ3MCwtMTg1MTU1NDQ3MF19
 -->
