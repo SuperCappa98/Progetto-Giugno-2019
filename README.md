@@ -20,9 +20,12 @@ Una volta scaricato il progetto da GitHub ed averlo aperto con il proprio IDE Ja
 
 > http://localhost:8080/"tipologiaRichiesta"
 
-All'interno della query string, la stringa *tipologiaRichiesta* indica il tipo di informazione che si 
+All'interno della query string, la stringa *tipologiaRichiesta* indica il tipo di informazione che si vuole richiedere scegliendo tra queste tre possibilità:
+
+ - **metadata:** Restituisce 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNzc0NDQ5NCw4OTk1OTAxNTUsNjQ2OD
+eyJoaXN0b3J5IjpbLTI3NzI1Njc4MSw4OTk1OTAxNTUsNjQ2OD
 cwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYsNTIyNzE0OTY1LC0x
 NDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xODUxNTU0NDcwXX0=
 -->
