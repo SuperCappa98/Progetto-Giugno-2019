@@ -50,11 +50,15 @@ Quindi l'utente, a seconda del filtro richiesto, dovrà specificare uno o due va
 > Nota bene: se si utilizzano filtri per attributi di tipo numerico, non si possono selezionare attributi di tipo String e nel caso del filtro *$bt* il primo valore inserito dovrà essere minore del secondo.
 
 Un esempio di richiesta statistiche con il filtro *$bt* è il seguente:
-> 
+
+> http://localhost:8080/statistics?attribute=finanziamentoProgetto&filter=$bt&value1=512197.5&value2=3000000
+
+dove si cercano i valori dell'attributo *finanziamentoProgetto* compresi tra 512197.5 e 300000.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc3NzIzNTMwLC0xMTI1ODYzMTM0LDg5OT
-U5MDE1NSw2NDY4NzA3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1
-MjI3MTQ5NjUsLTE0MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NT
-E1NTQ0NzBdfQ==
+eyJoaXN0b3J5IjpbLTEwNTA5NTU5MTAsLTExMjU4NjMxMzQsOD
+k5NTkwMTU1LDY0Njg3MDc0Miw2NDY4Njg5OTEsNTQyMTI1Mzk2
+LDUyMjcxNDk2NSwtMTQzMTMxMjMzMCwtMTg1MTU1NDQ3MCwtMT
+g1MTU1NDQ3MF19
 -->
