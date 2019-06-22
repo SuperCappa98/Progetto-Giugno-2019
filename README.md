@@ -2,11 +2,11 @@
 >Burini Lisa: S1081527
 >Cappanera Simone: S1081623
 ## Istruzioni per l'uso
-La seguente applicazione
+Il seguente progetto seguendo le specifiche 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjExNzUxMDIsLTE0MzEzMTIzMzAsLT
-E4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
+eyJoaXN0b3J5IjpbNTIyNzE0OTY1LC0xNDMxMzEyMzMwLC0xOD
+UxNTU0NDcwLC0xODUxNTU0NDcwXX0=
 -->
