@@ -262,7 +262,7 @@ public class Filtro {
 	 */
 	public boolean isExist() {
 		
-		if(modelloFiltro.equals("$or") || modelloFiltro.equals("$not") || modelloFiltro.equals("$gt") || modelloFiltro.equals("$lt"))
+		if(modelloFiltro.equals("$eq") ||modelloFiltro.equals("$or") || modelloFiltro.equals("$not") || modelloFiltro.equals("$gt") || modelloFiltro.equals("$lt") || modelloFiltro.equals("$bt"))
 			return true;
 		else
 			return false;
