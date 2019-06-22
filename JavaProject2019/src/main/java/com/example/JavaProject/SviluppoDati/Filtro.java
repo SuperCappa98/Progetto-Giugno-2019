@@ -4,26 +4,38 @@ import java.lang.reflect.*;
 import java.util.*;
 
 /**
- * 
- * @param modelloFiltro
+ * Classe che definisce un oggetto Filtro con un metodo che implementa sei tipi di filtri 
+ * e un metodo che verifica se il filtro immesso è valido
  */
 public class Filtro {
 	
 	private String modelloFiltro;			//attributo
 
-	public Filtro(String modelloFiltro) {   //costruttore
+	/**
+	 * Costruttore
+	 * 
+	 * @param modelloFiltro
+	 */
+	public Filtro(String modelloFiltro) {   
 		this.modelloFiltro = modelloFiltro;
 	}
 	
 	
 	/**
-	 * Metodo per fare una ricerca filtrata nella lista di input e restituire una lista filtrata
+	 * Metodo per fare una ricerca filtrata nella lista di input e restituire una lista filtrata<br>
+	 * Filtro $eq  per trovare gli elementi uguali a quello di riferimento<br>
+	 * Filtro $not per ritornare tutti gli elementi a parte quelli uguali a quello di riferimento<br>
+	 * Filtro $or  per trovare gli elementi uguali almeno a uno dei due valori di riferimento<br>
+	 * Filtro $gt  per ritornare solo i valori maggiori di quello di riferimento<br>
+	 * Filtro $lt  per ritornare solo i valori minori di quello di riferimento<br>
+	 * Filtro $bt  per ritornare solo i valori compresi tra i due valori di riferimento
 	 * 
-	 * @param attributo della classe FondiSviluppoPuglia
-	 * @param dato1 riferimento per il filtraggio
-	 * @param dato2 riferimento per il filtraggio con gli operatori $or e $bt
-	 * @param listaInput Lista data in input su cui il metodo farà il filtraggio
-	 * @return Lista filtrata
+	 * @param attributo   della classe FondiSviluppoPuglia
+	 * @param dato1       primo valore di riferimento per il filtraggio
+	 * @param dato2       secondo valore di riferimento per il filtraggio con gli operatori $or e $bt
+	 * @param listaInput  lista di oggetti FondiSviluppoPuglia su cui il metodo farà il filtraggio
+	 * 
+	 * @return una lista filtrata di oggetti FondiSviluppoPuglia
 	 */
 	public Object Research (String attributo, String dato1, String dato2, Vector <FondiSviluppoPuglia> listaInput){
 		
@@ -44,7 +56,7 @@ public class Filtro {
 		}
 		
 		
-		//converte i valori di riferimento in double, se essi sono stringhe letterali si entra nel catch
+		//converte i valori di riferimento in Double, se essi sono stringhe letterali si entra nel catch
 		try {
 			datoDouble1 = Double.parseDouble(dato1);
 			datoDouble2 = Double.parseDouble(dato2);
@@ -257,8 +269,7 @@ public class Filtro {
 	
 	
 	/**
-	 * 
-	 * @return true (filtro esiste) oppure false (non esiste)
+	 * @return <strong>true</strong> se il filtro immesso è valido oppure <strong>false</strong> non lo è
 	 */
 	public boolean isExist() {
 		
