@@ -1,8 +1,9 @@
 # Progetto Giugno 2019
->Burini Lisa: 
+>Burini Lisa: S10
+>Cappanera Simone: 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLT
-E4NTE1NTQ0NzBdfQ==
+eyJoaXN0b3J5IjpbLTQzNTMyODE3NiwtMTQzMTMxMjMzMCwtMT
+g1MTU1NDQ3MCwtMTg1MTU1NDQ3MF19
 -->
