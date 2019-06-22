@@ -16,9 +16,9 @@ L'applicazione Spring si occupa infine di implementare le risposte alle richiest
 
 ## Istruzioni per l'uso
 
-Una volta scaricato il progetto da GitHub ed averlo aperto con il proprio IDE Java (quello utilizzato per sviluppare il progetto è stato Eclipse) ed essersi assicurati che si abbiano installate tutte le librerie necessarie 
+Una volta scaricato il progetto da GitHub ed averlo aperto con il proprio IDE Java (quello utilizzato per sviluppare il progetto è stato Eclipse) ed essersi assicurati che si abbiano installate tutte le librerie necessarie (in particolare nel nostro caso era stata indispensabile importare la libreria 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk5NTkwMTU1LDY0Njg3MDc0Miw2NDY4Nj
-g5OTEsNTQyMTI1Mzk2LDUyMjcxNDk2NSwtMTQzMTMxMjMzMCwt
-MTg1MTU1NDQ3MCwtMTg1MTU1NDQ3MF19
+eyJoaXN0b3J5IjpbNTM5OTU4NzYzLDg5OTU5MDE1NSw2NDY4Nz
+A3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0
+MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
 -->
