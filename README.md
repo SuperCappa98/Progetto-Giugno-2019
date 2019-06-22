@@ -36,12 +36,12 @@ Facciamo due piccoli esempi:
 > http://localhost:8080/statistics?attribute=comune <br>
 > http://localhost:8080/data?attribute=codiceIstat
 
-Come già accennato, per i dati e le statistiche è possibile utilizzare dei particolari filtri che restituiranno i dati con le specifiche richieste dal filtro.
+Come già accennato, per i dati e le statistiche è possibile applicare dei particolari filtri che restituiranno i dati con le specifiche richieste dal filtro.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NDkxNzIxMyw4OTk1OTAxNTUsNjQ2OD
-cwNzQyLDY0Njg2ODk5MSw1NDIxMjUzOTYsNTIyNzE0OTY1LC0x
-NDMxMzEyMzMwLC0xODUxNTU0NDcwLC0xODUxNTU0NDcwXX0=
+eyJoaXN0b3J5IjpbNTgyMzQwODIzLDg5OTU5MDE1NSw2NDY4Nz
+A3NDIsNjQ2ODY4OTkxLDU0MjEyNTM5Niw1MjI3MTQ5NjUsLTE0
+MzEzMTIzMzAsLTE4NTE1NTQ0NzAsLTE4NTE1NTQ0NzBdfQ==
 -->
